@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drone Aerial Footage</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+        .image-container {
+            background-size: cover;
+            background-position: center;
+            height: 12rem;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </head>
 <body class="bg-gray-100 font-sans">
     <header class="bg-cover bg-center h-screen" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/276121821_131326586123448_1554609073049072035_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kFGiqVL57FkQ7kNvgHaOEm7&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYDSNaOT3PPxP_iom7NUp4t7ibngYuqaHC6kEH7KV-zjug&oe=6683A940');">
@@ -28,9 +46,15 @@
     <section class="p-8">
         <h2 class="text-3xl font-semibold mb-4 text-center">Portfolio</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="bg-cover bg-center h-48" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/276028616_130366866219420_2228194622583776777_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XebnEN_Cl4MQ7kNvgEN4aBz&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYCVzT9Z56vnSi2JoCw1C9Mphnb585AHkcTnMOQ1_RhlBw&oe=6683BA2B');"></div>
-            <div class="bg-cover bg-center h-48" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/275916608_129782726277834_1438067788710577736_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=VNlOXYGaSOoQ7kNvgG5u3rI&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYAQJpdX4S4yANmmZTGm5AqUQEbeTlcrgB0SYOjw-Lwbww&oe=6683B0E8');"></div>
-            <div class="bg-cover bg-center h-48" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/275295270_126900689899371_4087027117610067115_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dZyzyzimWbMQ7kNvgEsdU7g&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYAgCbV4CiepCFgUYhtUABEhZ-HetwerkyTERDt83EuDFQ&oe=6683C60F');"></div>
+            <a href="https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/276028616_130366866219420_2228194622583776777_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XebnEN_Cl4MQ7kNvgEN4aBz&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYCVzT9Z56vnSi2JoCw1C9Mphnb585AHkcTnMOQ1_RhlBw&oe=6683BA2B" data-fancybox="gallery" data-caption="Image 1">
+                <div class="image-container" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/276028616_130366866219420_2228194622583776777_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XebnEN_Cl4MQ7kNvgEN4aBz&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYCVzT9Z56vnSi2JoCw1C9Mphnb585AHkcTnMOQ1_RhlBw&oe=6683BA2B');"></div>
+            </a>
+            <a href="https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/275916608_129782726277834_1438067788710577736_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=VNlOXYGaSOoQ7kNvgG5u3rI&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYAQJpdX4S4yANmmZTGm5AqUQEbeTlcrgB0SYOjw-Lwbww&oe=6683B0E8" data-fancybox="gallery" data-caption="Image 2">
+                <div class="image-container" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/275916608_129782726277834_1438067788710577736_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=VNlOXYGaSOoQ7kNvgG5u3rI&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYAQJpdX4S4yANmmZTGm5AqUQEbeTlcrgB0SYOjw-Lwbww&oe=6683B0E8');"></div>
+            </a>
+            <a href="https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/275295270_126900689899371_4087027117610067115_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dZyzyzimWbMQ7kNvgEsdU7g&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYAgCbV4CiepCFgUYhtUABEhZ-HetwerkyTERDt83EuDFQ&oe=6683C60F" data-fancybox="gallery" data-caption="Image 3">
+                <div class="image-container" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/275295270_126900689899371_4087027117610067115_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dZyzyzimWbMQ7kNvgEsdU7g&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYAgCbV4CiepCFgUYhtUABEhZ-HetwerkyTERDt83EuDFQ&oe=6683C60F');"></div>
+            </a>
         </div>
         <div class="text-center">
             <a href="portfolio.html" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded">View More</a>

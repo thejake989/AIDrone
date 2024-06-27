@@ -1,44 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Drone Aerial Footage</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        main {
-            flex: 1;
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
+      }
+      .image-container {
+        background-size: cover;
+        background-position: center;
+        height: 12rem; /* 48px x 3 = 144px */
+      }
     </style>
-</head>
-<body class="bg-gray-100 font-sans">
+  </head>
+  <body class="bg-gray-100 font-sans">
     <header class="bg-gray-900 text-white p-4">
-        <nav class="flex justify-center space-x-4">
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <h1 class="text-2xl text-center">Portfolio</h1>
+      <nav class="flex justify-center space-x-4">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <h1 class="text-2xl text-center">Portfolio</h1>
     </header>
     <main class="p-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="bg-cover bg-center h-48" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/449320560_10233600139246679_908104472641210676_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=3tnEx3KP5LAQ7kNvgEDrnU5&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYCJbH_MtV3BCg2QVX0fXa7bOmSUBRuRPpDApNhoJQzUqA&oe=6683A166');"></div>
-            <div class="bg-cover bg-center h-48" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/449362624_10233600022923771_2997059755008188905_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_9-bBblaURkQ7kNvgF7H-mU&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYBhJA-1AzEqtSckQYJvlK9Dt2DyHzHP1JGhEQELWLyAHg&oe=6683B512');"></div>
-            <div class="bg-cover bg-center h-48" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/278016904_137143898875050_3756234108399112172_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8Y8X6NNW4mMQ7kNvgFOcyfY&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYCw6gmvJjqzfrWzh5YQLuE2AzFr9AtSBdWs6_sJPtR1GQ&oe=6683B0EA');"></div>
-            <div class="bg-cover bg-center h-48" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/277815413_136533555602751_6978943518486755412_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=UblyZ26crLAQ7kNvgGw7BVv&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYAo0tuFh1qSPYWnuaraJP38JHjRmVZ-Fw1W47xMdX033g&oe=6683AAF8');"></div>
-            <div class="bg-cover bg-center h-48" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/277765734_136169412305832_5399645218709137718_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mkin2y5G6O4Q7kNvgG-L9rp&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYAfeM8CtNYxZ5GAx8-cNKq-KSbcxZT0x1e0NxpWJm4KWA&oe=6683C00D');"></div>
-            <div class="bg-cover bg-center h-48" style="background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/276992225_131999402722833_4585029645040268152_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1knvUHeFNYAQ7kNvgFIdW4M&_nc_ht=scontent.fmkc1-1.fna&gid=Aa9VhU_5D_hcIWrihR4xBXn&oh=00_AYALnRjPEHoxsNbOHa_-kK4fqvIzWFNV5n3y73yahORbQA&oe=6683BBD4');"></div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <a
+          href="https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/449320560_10233600139246679_908104472641210676_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=3tnEx3KP5LAQ7kNvgEDrnU5&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYCJbH_MtV3BCg2QVX0fXa7bOmSUBRuRPpDApNhoJQzUqA&oe=6683A166"
+          data-fancybox="gallery"
+          data-caption="Image 1"
+        >
+          <div
+            class="image-container"
+            style="
+              background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/449320560_10233600139246679_908104472641210676_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=3tnEx3KP5LAQ7kNvgEDrnU5&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYCJbH_MtV3BCg2QVX0fXa7bOmSUBRuRPpDApNhoJQzUqA&oe=6683A166');
+            "
+          ></div>
+        </a>
+        <a
+          href="https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/449362624_10233600022923771_2997059755008188905_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_9-bBblaURkQ7kNvgF7H-mU&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYBhJA-1AzEqtSckQYJvlK9Dt2DyHzHP1JGhEQELWLyAHg&oe=6683B512"
+          data-fancybox="gallery"
+          data-caption="Image 2"
+        >
+          <div
+            class="image-container"
+            style="
+              background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/449362624_10233600022923771_2997059755008188905_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_9-bBblaURkQ7kNvgF7H-mU&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYBhJA-1AzEqtSckQYJvlK9Dt2DyHzHP1JGhEQELWLyAHg&oe=6683B512');
+            "
+          ></div>
+        </a>
+        <a
+          href="https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/278016904_137143898875050_3756234108399112172_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8Y8X6NNW4mMQ7kNvgFOcyfY&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYCw6gmvJjqzfrWzh5YQLuE2AzFr9AtSBdWs6_sJPtR1GQ&oe=6683B0EA"
+          data-fancybox="gallery"
+          data-caption="Image 3"
+        >
+          <div
+            class="image-container"
+            style="
+              background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/278016904_137143898875050_3756234108399112172_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8Y8X6NNW4mMQ7kNvgFOcyfY&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYCw6gmvJjqzfrWzh5YQLuE2AzFr9AtSBdWs6_sJPtR1GQ&oe=6683B0EA');
+            "
+          ></div>
+        </a>
+        <a
+          href="https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/277815413_136533555602751_6978943518486755412_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=UblyZ26crLAQ7kNvgGw7BVv&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYAo0tuFh1qSPYWnuaraJP38JHjRmVZ-Fw1W47xMdX033g&oe=6683AAF8"
+          data-fancybox="gallery"
+          data-caption="Image 4"
+        >
+          <div
+            class="image-container"
+            style="
+              background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/277815413_136533555602751_6978943518486755412_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=UblyZ26crLAQ7kNvgGw7BVv&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYAo0tuFh1qSPYWnuaraJP38JHjRmVZ-Fw1W47xMdX033g&oe=6683AAF8');
+            "
+          ></div>
+        </a>
+        <a
+          href="https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/277765734_136169412305832_5399645218709137718_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mkin2y5G6O4Q7kNvgG-L9rp&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYAfeM8CtNYxZ5GAx8-cNKq-KSbcxZT0x1e0NxpWJm4KWA&oe=6683C00D"
+          data-fancybox="gallery"
+          data-caption="Image 5"
+        >
+          <div
+            class="image-container"
+            style="
+              background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/277765734_136169412305832_5399645218709137718_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mkin2y5G6O4Q7kNvgG-L9rp&_nc_ht=scontent.fmkc1-1.fna&oh=00_AYAfeM8CtNYxZ5GAx8-cNKq-KSbcxZT0x1e0NxpWJm4KWA&oe=6683C00D');
+            "
+          ></div>
+        </a>
+        <a
+          href="https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/276992225_131999402722833_4585029645040268152_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1knvUHeFNYAQ7kNvgFIdW4M&_nc_ht=scontent.fmkc1-1.fna&gid=Aa9VhU_5D_hcIWrihR4xBXn&oh=00_AYALnRjPEHoxsNbOHa_-kK4fqvIzWFNV5n3y73yahORbQA&oe=6683BBD4"
+          data-fancybox="gallery"
+          data-caption="Image 6"
+        >
+          <div
+            class="image-container"
+            style="
+              background-image: url('https://scontent.fmkc1-1.fna.fbcdn.net/v/t39.30808-6/276992225_131999402722833_4585029645040268152_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1knvUHeFNYAQ7kNvgFIdW4M&_nc_ht=scontent.fmkc1-1.fna&gid=Aa9VhU_5D_hcIWrihR4xBXn&oh=00_AYALnRjPEHoxsNbOHa_-kK4fqvIzWFNV5n3y73yahORbQA');
+            "
+          ></div>
+        </a>
+      </div>
     </main>
-    <footer class="bg-gray-800 text-white p-4 text-center">
-        <p>&copy; 2024 Drone Aerial Footage. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
+      <p>&copy; 2024 Drone Aerial Footage. All rights reserved.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>
