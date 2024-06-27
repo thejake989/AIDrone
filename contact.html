@@ -1,89 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Drone Aerial Footage</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
-    />
-
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      main {
-        flex: 1;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-100 font-sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+</head>
+<body class="bg-gray-100 font-sans">
     <header class="bg-gray-900 text-white p-4">
-      <nav class="flex justify-center space-x-4">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <h1 class="text-2xl text-center">Contact Us</h1>
+        <nav class="flex justify-center space-x-4">
+            <a href="index.html" class="hover:text-blue-300">Home</a>
+            <a href="portfolio.html" class="hover:text-blue-300">Portfolio</a>
+            <a href="services.html" class="hover:text-blue-300">Services</a>
+            <a href="about.html" class="hover:text-blue-300">About Us</a>
+            <a href="contact.html" class="hover:text-blue-300">Contact</a>
+        </nav>
+        
     </header>
-    <main class="p-8">
-      <h2 class="text-3xl font-semibold mb-4">Get in Touch</h2>
-      <form
-        class="bg-white p-4 rounded shadow-md"
-        id="contactForm"
-        action="https://formspree.io/f/xkgwwlgn"
-        method="POST"
-      >
-        <div class="mb-4">
-          <label class="block text-gray-700" for="name">Name</label>
-          <input
-            class="w-full px-4 py-2 border rounded"
-            type="text"
-            id="name"
-            name="name"
-            required
-          />
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700" for="email">Email</label>
-          <input
-            class="w-full px-4 py-2 border rounded"
-            type="email"
-            id="email"
-            name="email"
-            required
-          />
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700" for="message">Message</label>
-          <textarea
-            class="w-full px-4 py-2 border rounded"
-            id="message"
-            name="message"
-            rows="4"
-            required
-          ></textarea>
-        </div>
-        <button class="bg-blue-500 text-white px-4 py-2 rounded" type="submit">
-          Send Message
-        </button>
-      </form>
+    <main class="p-8 flex flex-col items-center">
+        <h2 class="text-3xl font-semibold mb-4 text-center">Get in Touch</h2>
+        <form class="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg" id="contactForm" action="https://formspree.io/f/xkgwwlgn" method="POST">
+            <div class="mb-6">
+                <label class="block text-gray-700 font-semibold mb-2" for="name">Name</label>
+                <input class="form-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none" type="text" id="name" name="name" required />
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 font-semibold mb-2" for="email">Email</label>
+                <input class="form-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none" type="email" id="email" name="email" required />
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 font-semibold mb-2" for="message">Message</label>
+                <textarea class="form-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button class="form-button bg-blue-500 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-blue-400 focus:outline-none w-full" type="submit">Send Message</button>
+        </form>
     </main>
-    <footer class="bg-gray-800 text-white p-4 text-center">
-      <p>&copy; 2024 Drone Aerial Footage. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
+        <p>&copy; 2024 Drone Aerial Footage. All rights reserved.</p>
     </footer>
-    <script src="js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="js/scripts.js"></script>
-  </body>
+</body>
 </html>
