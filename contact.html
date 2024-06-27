@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Drone Aerial Footage</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-gray-900 text-white p-4">
+        <nav class="flex justify-center space-x-4">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1 class="text-2xl text-center">Contact Us</h1>
+    </header>
+    <main class="p-8">
+        <h2 class="text-3xl font-semibold mb-4">Get in Touch</h2>
+        <form class="bg-white p-4 rounded shadow-md" id="contactForm" action="https://formspree.io/f/xkgwwlgn" method="POST">
+            <div class="mb-4">
+                <label class="block text-gray-700" for="name">Name</label>
+                <input class="w-full px-4 py-2 border rounded" type="text" id="name" name="name" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700" for="email">Email</label>
+                <input class="w-full px-4 py-2 border rounded" type="email" id="email" name="email" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700" for="message">Message</label>
+                <textarea class="w-full px-4 py-2 border rounded" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded" type="submit">Send Message</button>
+        </form>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2024 Drone Aerial Footage. All rights reserved.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

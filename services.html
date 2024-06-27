@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Drone Aerial Footage</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+        .service-list {
+            text-align: center;
+        }
+        .service-list li {
+            font-size: 1.25rem; /* Increase font size */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-gray-900 text-white p-4">
+        <nav class="flex justify-center space-x-4">
+            <a href="index.html" class="hover:text-gray-400">Home</a>
+            <a href="portfolio.html" class="hover:text-gray-400">Portfolio</a>
+            <a href="services.html" class="hover:text-gray-400">Services</a>
+            <a href="contact.html" class="hover:text-gray-400">Contact</a>
+        </nav>
+        <h1 class="text-2xl text-center mt-4">Services</h1>
+    </header>
+    <main class="p-8 flex flex-col items-center">
+        <h2 class="text-3xl font-semibold mb-8 text-center">Our Services</h2>
+        <p class="text-gray-700 text-lg mb-8 text-center">We offer a range of aerial photography services including:</p>
+        <ul class="list-disc list-inside text-gray-700 service-list">
+            <li>Real Estate Photography</li>
+            <li>Event Photography</li>
+            <li>Landscape Photography</li>
+            <li>Commercial Photography</li>
+            <li>Custom Projects</li>
+        </ul>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
+        <p>&copy; 2024 Drone Aerial Footage. All rights reserved.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
