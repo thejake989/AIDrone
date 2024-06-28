@@ -3,60 +3,46 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
 main {
   flex: 1;
+}
 
-  .image-container {
-    background-size: cover;
-    background-position: center;
-    height: 12rem; /* 48px x 3 = 144px */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-radius: 0.5rem;
-    overflow: hidden;
-  }
-
-  .image-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .image-container {
-    background-size: cover;
-    background-position: center;
-    height: 12rem; /* 48px x 3 = 144px */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-radius: 0.5rem;
-    overflow: hidden;
+.image-container {
+  background-size: cover;
+  background-position: center;
+  height: 12rem; /* 48px x 3 = 144px */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .image-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .form-input {
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .form-input:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
 }
 
 .form-button {
-    transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .form-button:hover {
-    background-color: #2563eb;
+  background-color: #2563eb;
 }
 
 .service-list li {
-    transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .service-list li:hover {
-    color: #2563eb;
-}
-
+  color: #2563eb;
 }
